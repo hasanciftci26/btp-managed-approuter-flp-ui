@@ -1,0 +1,20 @@
+{
+  "xsappname": "btp-managed-approuter-flp-ui",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.UIViewer",
+      "description": "Scope to display UI"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "DisplayUI4",
+      "description": "Role to display UI 4",
+      "scope-references": [
+        "$XSAPPNAME.UIViewer"
+      ]
+    }
+  ]
+}
